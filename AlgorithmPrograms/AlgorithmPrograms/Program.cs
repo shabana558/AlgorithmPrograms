@@ -18,6 +18,7 @@ namespace AlgorithmPrograms
                
                 Console.WriteLine("1.Insertion Sort");
                 Console.WriteLine("2.Bubble sort");
+                Console.WriteLine("3.Merge sort");
                 Console.WriteLine("Enter the option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -34,6 +35,12 @@ namespace AlgorithmPrograms
                         BubbleSort.BubbleSortInArray(arr1);
                         BubbleSort.PrintArray(arr1);
                         break;
+                    case 3:
+                        int[] arr2 = { 32, 12, 9, 65, 24, 5 };
+                        MergeSort.Sort(arr2, 0, arr2.Length - 1);
+                        MergeSort.PrintArray(arr2);
+                        break;
+
                     default:
                         Console.WriteLine("Enter the valid option!");
                         break;
