@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.IO;
 
 namespace AlgorithmPrograms
 {
@@ -18,6 +17,7 @@ namespace AlgorithmPrograms
             {
                
                 Console.WriteLine("1.Insertion Sort");
+                Console.WriteLine("2.Bubble sort");
                 Console.WriteLine("Enter the option");
                 int num = Convert.ToInt32(Console.ReadLine());
                 switch (num)
@@ -28,6 +28,11 @@ namespace AlgorithmPrograms
                         int[] arr = { 25,52,36,58,41 };
                         insertionSort.Sort(arr);
                         insertionSort.PrintArray(arr);
+                        break;
+                    case 2:
+                        int[] arr1 = {25,26,35,85,65};
+                        BubbleSort.BubbleSortInArray(arr1);
+                        BubbleSort.PrintArray(arr1);
                         break;
                     default:
                         Console.WriteLine("Enter the valid option!");
